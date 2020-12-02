@@ -1,0 +1,46 @@
+.card-container {
+    display: block;
+    margin: 1rem;
+    width: 300px;
+    box-shadow: 0 5px 5px grey;
+    border-radius: 10px;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+    background-color: rgb(247, 166, 166);
+    
+}
+
+.card-container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 9px 7px grey;
+    z-index: 0;
+}
+
+.card-container:active {
+    transform: scale(0.98);
+}
+
+.card-header {
+    border-radius: 10px 10px 0 0;
+    background-color: white;
+}
+
+.pokemon-img {
+    border-radius: 10px 10px 0 0;
+    width: auto;
+    max-width: 300px;
+    height: 300px;
+}
+
+.pokemon-name {
+    background-color: rgb(173, 173, 173);
+    color:white;
+    padding: 1px;
+    margin: 0;
+}
+
+.pokemon-detail {
+    padding: 1rem;
+    background-color: lightblue;
+    border-radius: 0 0 10px 10px;
+}
