@@ -1,10 +1,10 @@
 .navbar {
     background-color: darkorchid;
-    color: white;
     overflow: hidden;
     position: fixed;
     top: 0;
     width: 100%;
+    padding: auto;
     z-index: 10;
 }
 
@@ -52,4 +52,20 @@
     background-color: rgb(198, 117, 238);
     border-radius: 0;
     color: white;
+}
+
+@media only screen and (max-width: 768px) {
+
+    /* .navbar {
+        height: 50px;
+    } */
+
+    .nav-items {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .navlinks {
+        display: block;
+    }
 }

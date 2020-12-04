@@ -2,9 +2,9 @@ import './App.css';
 import React from 'react'
 import Nav from './components/nav'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import Type from './pages/type'
+import Types from './pages/types'
 import Stats from './pages/stats'
-import Pokemon from './pages/pokemon'
+import Pokemon from './pages/pokemons'
 
 class App extends React.Component{
   render() {
@@ -13,9 +13,9 @@ class App extends React.Component{
         <div className="App">
           <Nav />
           <Switch>
-            <Route path="/" exact component={Pokemon} />
-            <Route path="/type" component={Type} />
-            <Route path="/stats" component={Stats} />
+            <Route path="/React_pokedex" exact component={Pokemon} />
+            <Route path="/React_pokedex/type" component={Types} />
+            <Route path="/React_pokedex/stats" component={Stats} />
           </Switch>
         </div>
       </Router>

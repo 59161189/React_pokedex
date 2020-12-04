@@ -1,0 +1,12 @@
+.types {
+    display: block;
+    margin-top: 4rem;
+}
+
+.types-container {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+}
+
