@@ -1,7 +1,7 @@
 import React from 'react'
 import Card from '../components/card'
 import '../style/pokemons.css'
-
+ 
 class Pokemons extends React.Component {
     constructor() {
         super();
@@ -12,7 +12,7 @@ class Pokemons extends React.Component {
 
     async componentDidMount() {
         console.log(`start fetching`);
-        const response = await fetch(`https://pokeapi.co/api/v2/pokemon?limit=1117`);
+        const response = await fetch(`https://pokeapi.co/api/v2/pokemon?limit=200`);
         const fetchedData = await response.json();
         this.setState({
             pokemons: fetchedData.results
