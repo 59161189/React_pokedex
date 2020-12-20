@@ -1,13 +1,12 @@
 .card-container {
     display: block;
     margin: 1rem;
-    width: 300px;
-    box-shadow: 0 5px 5px grey;
+    width: 200px;
+    height: auto;
+    box-shadow: 0 2px 5px 2px grey;
     border-radius: 10px;
     transition: 0.2s ease-in-out;
     cursor: pointer;
-    background-color: rgb(247, 166, 166);
-    
 }
 
 .card-container:hover {
@@ -28,19 +27,25 @@
 .img {
     border-radius: 10px 10px 0 0;
     width: auto;
-    max-width: 300px;
-    height: 300px;
+    max-width: 200px;
+    height: 200px;
 }
 
 .name {
     background-color: rgb(173, 173, 173);
     color:white;
     padding: 1px;
-    margin: 0;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,900&display=swap');
 
 .detail {
     padding: 1rem;
     background-color: lightblue;
     border-radius: 0 0 10px 10px;
+    /* font-family: 'Nunito', sans-serif; */
+}
+
+p {
+    font-family: 'Nunito', sans-serif;
 }

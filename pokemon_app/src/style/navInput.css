@@ -1,0 +1,33 @@
+input {
+    align-items: flex-start;
+    background-color:white;
+    height: 20px;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid rgb(95, 95, 95);
+    transition: 0.3s ease-in;
+    font-size: medium;
+}
+
+::placeholder {
+    color: rgb(95, 95, 95);
+}
+
+input:focus {
+    outline: none;
+}
+
+.submit-btn {
+    color: rgb(95, 95, 95);
+    padding: 10px;
+    margin: 10px;
+    background-color: white;
+    border: 1px solid rgb(95, 95, 95);
+    cursor: pointer;
+    outline: none;
+    font-size: medium;
+}
+
+.submit-btn:hover {
+    color: rgb(30, 30, 30);
+}

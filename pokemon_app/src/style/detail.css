@@ -1,0 +1,16 @@
+.detail-container {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    border: 1px solid white;
+}
+
+.detail-container .detail-logo{
+    width: 30px;
+    padding: 0 1rem;
+}
+
+.detail-container .detail-name{
+    width: 30px;
+    color: rgb(110, 110, 110);
+}

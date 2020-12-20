@@ -1,43 +1,35 @@
 import '../style/types.css'
-import React from 'react'
 import Card from '../components/card'
+import Detail from '../components/detail'
+import React, { useState, useEffect } from 'react'
 
-class Types extends React.Component {
-    constructor() {
-        super();
-        this.state = {
-            types: []
-        }
-    }
-    async componentDidMount() {
-        console.log(`start fetching`);
-        const response = await fetch(`https://pokeapi.co/api/v2/type`);
-        const fetchedData = await response.json();
-        this.setState({
-            types: fetchedData.results
-        })
-        console.log(`this is fetched data ${this.state.types}`);
-    }
 
-    mapping() {
-        this.state.types.map(type => console.log(type))
-    }
+function Types() {
+    const [types, setTypes] = useState([]);
 
-    render() {
-        this.mapping();
-        const typeName = this.state.types.map((type, i = 0) => 
-            <Card key={i} name={type.name} imageURL={'../img/pokemon_types/GO_Normal.webp'} />
-        );
-        return (
+    useEffect(() => {
+        fetch(`https://pokeapi.co/api/v2/type`)
+            .then((res) => res.json())
+            .then(result => setTypes(result.results))
+    }, [])
+
+    const typesData = types.map((type) => <Detail key={type.name} name={type.name}/>)
+
+    return (
+        <div className="container">
             <div className="types">
                 <h1>Types Page</h1>
                 <div className="types-container">
-                    {typeName}
+                    {typesData}
                 </div>
             </div>
-
-        );
-    }
+            <div className="stats">
+                <h1>Types Page</h1>
+                <div className="stats-container">
+                </div>
+            </div>
+        </div>
+    )
 }
 
 export default Types;
